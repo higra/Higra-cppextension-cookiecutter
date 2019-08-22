@@ -1,9 +1,9 @@
 import {{ cookiecutter.python_package_name }} as m
-from unittest import TestCase
+import unittest
 import numpy as np
 import higra as hg
 
-class ExampleTest(TestCase):
+class ExampleTest(unittest.TestCase):
 
     @staticmethod
     def get_test_tree():

@@ -79,6 +79,7 @@ setup(
     install_requires=[
         'higra>=0.3.8',	
         'numpy>=1.15.4',
+        'cmake>=3.1.0'
     ],
     zip_safe=False
 )
