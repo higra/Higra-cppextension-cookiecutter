@@ -1,0 +1,24 @@
+platform:
+  - x64
+
+image:
+  - Visual Studio 2017
+
+environment:
+  MINICONDA: C:\Miniconda36-x64
+
+init:
+  - if "%APPVEYOR_BUILD_WORKER_IMAGE%" == "Visual Studio 2017" set VCVARPATH="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars64.bat"
+  - "set PATH=%MINICONDA%;%MINICONDA%\\Scripts;%MINICONDA%\\Library\\bin;%PATH%"
+
+install:
+  - pip install cookiecutter
+  - pip install higra
+  - mkdir build
+  - cd build
+  - cookiecutter %APPVEYOR_BUILD_FOLDER% --no-input
+  #- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+
+build_script:
+  - pip install ./higra-extension
+  - python ./higra-extension/tests/test_extension.py
