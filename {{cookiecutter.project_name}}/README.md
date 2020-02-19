@@ -36,3 +36,8 @@ Tests
 -----
 
 Tests are run automatically at the end of a build: the build will fail if tests are not successful. 
+
+Known Issues
+------------
+
+Clang on Linux may not work due to ABI compatibilty issues.

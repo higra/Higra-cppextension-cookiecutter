@@ -10,16 +10,6 @@ matrix:
           packages:
             - g++-6
       env: COMPILER=gcc GCC=6
-    - os: linux
-      addons:
-        apt:
-          sources:
-            - ubuntu-toolchain-r-test
-            - llvm-toolchain-trusty-4.0
-          packages:
-            - g++-6
-            - clang-4.0
-      env: COMPILER=clang CLANG=4.0
     - os: osx
       osx_image: xcode8
       compiler: clang
