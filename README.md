@@ -1,5 +1,5 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/0cuehlbeaxoql1hj/branch/master?svg=true)](https://ci.appveyor.com/project/PerretB/higra-cppextension-cookiecutter/branch/master)
-[![Build Status](https://travis-ci.org/higra/Higra-cppextension-cookiecutter.svg?branch=master)](https://travis-ci.org/higra/Higra-cppextension-cookiecutter)
+[![Build Status](https://travis-ci.com/higra/Higra-cppextension-cookiecutter.svg?branch=master)](https://travis-ci.com/higra/Higra-cppextension-cookiecutter)
 
 # higra-cppextension-cookiecutter
 
