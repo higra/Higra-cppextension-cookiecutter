@@ -26,7 +26,7 @@ A binary wheel ease the redistribution of your project and can be installed with
  
 **Install wheel**
  
-Whells can be installed with *pip*:
+A wheel can be installed with *pip*:
  
  - `pip install wheel_name.whl`
  
