@@ -7,6 +7,9 @@
 // Example
 auto example_function(const hg::tree & tree, const xt::pyarray<double> & altitudes){
     xt::pyarray<double> res = xt::zeros_like(altitudes);
+    
+    tree.compute_children();
+    
     for(auto n: leaves_to_root_iterator(tree, hg::leaves_it::exclude)){
         double tmp = 1;
         for(auto c: hg::children_iterator(n, tree)){
