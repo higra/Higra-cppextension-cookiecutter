@@ -28,6 +28,7 @@ message("Current build type is: ${CMAKE_BUILD_TYPE}")
 
 include(CheckCXXCompilerFlag)
 message("Current compiler is: ${CMAKE_CXX_COMPILER_ID}")
+set(CMAKE_CXX_STANDARD 14)
 
 string(TOUPPER "${CMAKE_BUILD_TYPE}" U_CMAKE_BUILD_TYPE)
 
